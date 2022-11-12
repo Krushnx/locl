@@ -1,0 +1,27 @@
+
+.navbar
+{
+    border-top: 1px solid rgb(199, 199, 199);
+    border-bottom: 1px solid rgb(199, 199, 199);
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    height: 45px;
+    position: sticky;
+    /* top: 0%; */
+
+}
+
+#search
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.search {
+    width: 241%;
+    /* display: flex; */
+}
+  

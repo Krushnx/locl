@@ -1,0 +1,229 @@
+#heading
+{
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    
+}
+
+#heading h2
+{
+    color: red;
+    font-size: 2rem;
+}
+
+/* Collection start */
+
+.row
+{
+    margin-top: 4px;
+    /* border-top: 1px solid rgb(199, 199, 199); */
+    border-bottom: 1px solid rgb(199, 199, 199);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pri
+{
+    
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    background-color: white;
+}
+
+.pri img
+{
+    margin: 20px 10px;
+    width: 500px;
+    /* height: 400px; */
+    max-height: 400px;
+}
+.cbk
+{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin: 10px 50px;
+    /* border: 2px solid yellow; */
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.cbk label
+{
+    margin-left: 10px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.sec
+{
+    
+    /* border: 2px solid green; */
+    width: 1400px;
+    background-color:white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+.tit p
+{
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.tit p:hover
+{
+   color: rgb(0,183,255);
+}
+
+.rating
+{
+    display: flex;
+    align-items: center;
+    padding: auto;
+    margin: 2px;
+    margin-top: -30px;
+    font-size: 17px;
+}
+.rating p
+{
+    color: rgb(199, 199, 199);
+    font-weight: bold;
+}
+
+.star
+{
+    background-color: green;
+    color: white;
+    display: flow-root;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    padding: -10px 4px;
+    border: 3px solid green;
+    font-weight: 600;
+}
+
+.a
+{
+    margin: 20px;
+    font-size: 20px;
+    /* list-style-type: disc ; */
+}
+.a ul {
+    list-style: none; /* Remove default bullets */
+  }
+
+.a ul li::before {
+    content: "\2022"; 
+    color: rgb(199, 199, 199); 
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em; 
+    /* margin-left: -1em;  */
+  }
+
+.tri
+{
+    /* border: 2px solid blue; */
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* margin: 0px 50px; */
+}
+
+.dis
+{
+    display: flex;
+    align-items: flex-start;
+}
+
+.dis p
+{
+    margin: 0px 2px;
+}
+.s1
+{
+    font-size: 35px;
+    margin: 30px 170px 30px 10px;
+    font-weight: bold;
+}
+
+#khoka
+{
+    margin: 0px 100px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* grid-gap: -200px; */
+}
+
+#griditem
+{
+
+    margin: 25px 0px;
+    height: 450px;
+    width: 400px;
+    border: 1px solid rgba(1, 1, 1, 0.1);
+    /* box-shadow: 4px 4px rgb(0,0,0,0.07); */
+    border-radius: 0px 30px 30px 30px;
+    background-color: white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+#griditem:hover
+{
+    /* transform: scale(1.01); */
+    /* box-shadow: 4px 4px rgb(0,0,0,0.2); */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+#griditem h1
+{
+    
+    font-family: 'PT Sans', sans-serif;
+}
+
+
+#griditem h1:hover
+{
+    color: rgb(0,183,255);
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+
+    .row
+    {
+        flex-direction: column;
+    }
+
+    .sec
+    {
+        width: auto;
+    }
+    .pri img
+    {
+        width: 340px;
+    }
+    #khoka
+    {
+        grid-template-columns: auto;
+    }
+
+
+.tri
+{
+    padding-left: 30px;
+}
+}
